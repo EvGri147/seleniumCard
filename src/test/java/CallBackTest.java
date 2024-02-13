@@ -42,7 +42,7 @@ public class CallBackTest {
     @Test
     void shouldCardForm() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79998887744");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -54,7 +54,7 @@ public class CallBackTest {
     @Test
     void shouldCardFormWithDash() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов-Петров Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79998887744");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -67,7 +67,7 @@ public class CallBackTest {
     @Test
     void shouldCardFormWithSpace() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Петров Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79998887744");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -80,7 +80,7 @@ public class CallBackTest {
     @Test
     void shouldCardFormJustName() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79998887744");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -93,7 +93,7 @@ public class CallBackTest {
     @Test
     void shouldCardFormInvalidName() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Ivanov Ivan");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79998887744");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -106,7 +106,7 @@ public class CallBackTest {
     @Test
     void shouldCardFormInvalidPhone() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+7999888774");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+7999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -119,7 +119,7 @@ public class CallBackTest {
     @Test
     void shouldCardFormInvalidPhoneWithPlus() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("8+7999888774");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("8+7999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -131,7 +131,7 @@ public class CallBackTest {
 
     @Test
     void shouldCardFormWithoutName() {
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79998887744");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.cssSelector("[data-test-id=agreement]")).click();
         driver.findElement(By.className("button")).click();
 
@@ -156,7 +156,7 @@ public class CallBackTest {
     @Test
     void shouldCardFormWithoutCheckbox() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79998887744");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79999999999");
         driver.findElement(By.className("button")).click();
 
         String expected = "Я соглашаюсь с условиями обработки и использования моих персональных данных и разрешаю сделать запрос в бюро кредитных историй";
